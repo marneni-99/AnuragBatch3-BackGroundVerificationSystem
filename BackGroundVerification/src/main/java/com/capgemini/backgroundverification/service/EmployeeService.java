@@ -2,9 +2,11 @@ package com.capgemini.backgroundverification.service;
 
 import java.util.List;
 
+import com.capgemini.backgroundverification.entity.FileModel;
 import com.capgemini.backgroundverification.entity.Logindata;
+import com.capgemini.backgroundverification.entity.Verification;
 
-public interface LoginService {
+public interface EmployeeService {
 
 	Logindata addUser(Logindata u);
 
@@ -17,4 +19,6 @@ public interface LoginService {
 	
 	Boolean loginUser(Logindata u);
 
+
+	Verification addVer(Verification u);
 }
